@@ -1,0 +1,40 @@
+{
+  "AK": [
+    {
+      "MODEL": "KANN_ULTRA",
+      "VERSION": "V001",
+      "MODE": "ADD",
+      "ORGNAME": "hip-hop-10"
+    },
+    {
+      "VALUES": [
+        {
+          "BANDCOUNT": "20",
+          "GAINCOUNT": "20",
+          "QCOUNT": "20",
+          "EGAINCOUNT": "20"
+        },
+        {
+          "GAINMAX": "50.0",
+          "QMAX": "40.0",
+          "EGAINMAX": "50.0",
+          "GAINMIN": "-50.0",
+          "QMIN": "10.0",
+          "EGAINMIN": "-50.0"
+        },
+        {
+          "GAIN": "89,85,82,78,75,70,65,60,55,50,50,55,60,65,70,75,78,82,85,89",
+          "Q": "20,22,24,26,28,28,26,24,22,20,20,22,24,26,28,28,26,24,22,20",
+          "EGAIN": "9,8,8,7,6,5,4,4,3,3,3,4,4,5,6,7,8,8,9,9"
+        },
+        {
+          "OPTION1": "NULL",
+          "OPTION2": "NULL",
+          "OPTION3": "NULL",
+          "OPTION4": "NULL",
+          "OPTION5": "NULL"
+        }
+      ]
+    }
+  ]
+}

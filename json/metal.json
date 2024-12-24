@@ -1,0 +1,40 @@
+{
+  "AK": [
+    {
+      "MODEL": "KANN_ULTRA",
+      "VERSION": "V001",
+      "MODE": "ADD",
+      "ORGNAME": "metal"
+    },
+    {
+      "VALUES": [
+        {
+          "BANDCOUNT": "20",
+          "GAINCOUNT": "20",
+          "QCOUNT": "20",
+          "EGAINCOUNT": "20"
+        },
+        {
+          "GAINMAX": "50.0",
+          "QMAX": "40.0",
+          "EGAINMAX": "50.0",
+          "GAINMIN": "-50.0",
+          "QMIN": "10.0",
+          "EGAINMIN": "-50.0"
+        },
+        {
+          "GAIN": "95,90,85,80,75,80,85,90,95,99,99,95,90,85,80,75,70,65,60,55",
+          "Q": "12,13,14,15,16,18,20,22,24,25,24,22,20,18,16,15,14,13,12,11",
+          "EGAIN": "9,8,8,7,7,7,6,6,5,5,5,4,4,3,3,2,2,1,1,0"
+        },
+        {
+          "OPTION1": "NULL",
+          "OPTION2": "NULL",
+          "OPTION3": "NULL",
+          "OPTION4": "NULL",
+          "OPTION5": "NULL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "AK": [
+    {
+      "MODEL": "KANN_ULTRA",
+      "VERSION": "V001",
+      "MODE": "ADD",
+      "ORGNAME": "low-bass-10"
+    },
+    {
+      "VALUES": [
+        {
+          "BANDCOUNT": "20",
+          "GAINCOUNT": "20",
+          "QCOUNT": "20",
+          "EGAINCOUNT": "20"
+        },
+        {
+          "GAINMAX": "50.0",
+          "QMAX": "40.0",
+          "EGAINMAX": "50.0",
+          "GAINMIN": "-50.0",
+          "QMIN": "10.0",
+          "EGAINMIN": "-50.0"
+        },
+        {
+          "GAIN": "89,85,80,75,70,65,60,55,50,45,40,40,40,40,40,40,40,40,40,40",
+          "Q": "29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10",
+          "EGAIN": "9,8,8,7,7,6,6,5,5,4,4,3,3,2,2,1,1,1,0,0"
+        },
+        {
+          "OPTION1": "NULL",
+          "OPTION2": "NULL",
+          "OPTION3": "NULL",
+          "OPTION4": "NULL",
+          "OPTION5": "NULL"
+        }
+      ]
+    }
+  ]
+}
