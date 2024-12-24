@@ -18,7 +18,6 @@ function textToBinary(text: string): string {
 function parseBinaryToJson(binaryString: string): object {
     try {
         const decodedText = binaryToText(binaryString);
-        // Assuming the binary decodes into a JSON-compatible string
         return JSON.parse(decodedText);
     } catch (error) {
         if (error instanceof Error) {
@@ -31,13 +30,9 @@ function parseBinaryToJson(binaryString: string): object {
 
 function decodeBase64ToJson(base64String: string): object {
     try {
-        // Decode Base64 to string
         const jsonBinaryString = Buffer.from(base64String, 'base64').toString('utf-8');
         const jsonString = parseBinaryToJson(jsonBinaryString);
         console.log('Decoded string:', JSON.stringify(jsonString)); // Debugging log
-        // // Ensure valid JSON structure
-        // const trimmedJsonString = jsonString.trim();
-        // return JSON.parse(trimmedJsonString);
         return jsonString;
     } catch (error) {
         if (error instanceof Error) {
@@ -49,7 +44,6 @@ function decodeBase64ToJson(base64String: string): object {
     }
 }
 
-// Function to encode JSON object to Base64
 function encodeJsonToBase64(jsonObject: object): string {
     try {
         const jsonString = JSON.stringify(jsonObject);
@@ -63,7 +57,6 @@ function encodeJsonToBase64(jsonObject: object): string {
     }
 }
 
-// Function to process all .dat files in a folder
 function processDatFiles(datFolder: string, jsonFolder: string): void {
     const files = fs.readdirSync(datFolder);
     files.forEach(file => {
@@ -89,14 +82,9 @@ function processJsonFiles(jsonFolder: string, datFolder: string): void {
             const filePath = path.join(jsonFolder, file);
             const jsonContent = fs.readFileSync(filePath, 'utf-8');
             try {
-                // Read JSON and encode it to binary
                 const jsonObject = JSON.parse(jsonContent);
                 const binaryString = textToBinary(JSON.stringify(jsonObject));
-
-                // Encode binary to Base64
                 const base64Content = Buffer.from(binaryString, 'utf-8').toString('base64');
-
-                // Write back to .dat file
                 const datFilePath = path.join(datFolder, path.basename(file, '.json') + '.dat');
                 fs.writeFileSync(datFilePath, base64Content, 'utf-8');
                 console.log(`Converted ${file} to Base64.`);
@@ -107,7 +95,6 @@ function processJsonFiles(jsonFolder: string, datFolder: string): void {
     });
 }
 
-// Function to prompt the user for an action
 function promptUser(): void {
     const rl = readline.createInterface({
         input: process.stdin,
@@ -136,6 +123,5 @@ function main() {
     promptUser();
 }
 
-
-main()
+main();
 
